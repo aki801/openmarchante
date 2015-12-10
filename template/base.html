@@ -3,41 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <title>OpenMarchante</title>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
   <header id="barsup"> <!--Considerar este encabezado como una barra de estado superior-->
-    <aside id="moneda">$v</aside>
-    <nav id="menuStat">Tel | User | Deseos | Carrito | Salir</nav>
+    <aside id="moneda">$ moneda <i class="fa fa-caret-down"></i></aside>
+    <nav id="menuStat"><i class="fa fa-whatsapp"></i> Tel  <i class="fa fa-user"></i> User <i class="fa fa-heart"></i> Deseos  <i class="fa fa-shopping-basket"></i> Carrito  <i class="fa fa-sign-out"></i> Salir</nav>
     <div class="reset"></div>
   </header>
 
   <article>
     <header> <!-- -->
-      <img src="img/logo.jpg" alt="logo" />
+      <img src="img/Y-k.full.1709057.jpg" alt="logo" />
+       <aside id="carStatus">
+        <i class="fa fa-shopping-basket"></i> 0 item(s) - $0.00
+      </aside>
       <form action="index.html" method="get">
-        <input type="text" name="palabras" required placeholder="articulos a buscar">
-        <input type="submit" value="[icon]" >
+        <input id="search" type="text" name="palabras" required placeholder="articulos a buscar"><button id="submit" type="submit"><i class="fa fa-search"></i></button> 
       </form>
       
-      <aside id="carStatus">
-        [icon] 0 item(s) - $0.00
-      </aside>
+     
     </header> <!-- -->
     
     <nav> <!---->
       <ul>
-        <li>Desktops
+        <li><a href="">Desktops</a> 
           <ul>
-            <li>Pc (0)</li>
-            <li>Linux (7)</li>
-            <li>Mac (1)</li>
+            <li><a href="">Pc (0)</a></li>
+            <li><a href="">Linux (7)</a></li>
+            <li><a href="">Mac (1)</a></li>
             <li class="sep"></li> <!--separador-->
-            <li>Ver todos</li>
+            <li><a href="">Ver todos</a></li>
           </ul>
         </li>
 
-        <li>Laptops y Notebooks
+        <li><a href="">Laptops y Notebooks</a>
           <ul>
             <li>Pc (0)</li>
             <li>Linux (5)</li>
@@ -47,7 +49,7 @@
           </ul>
         </li>
 
-        <li> Componentes
+        <li> <a href="">Componentes</a>
           <ul>
             <li>Ratones(0)</li>
             <li>Monitores (1)</li>
@@ -59,11 +61,11 @@
           </ul>
         </li>
 
-        <li>Tablets</li>
-        <li>Software</li>
-        <li>Celulares</li>
-        <li>camaras</li>
-        <li>Reproductores MP3
+        <li><a href="">Tablets</a></li>
+        <li><a href="">Software</a></li>
+        <li><a href="">Celulares</a></li>
+        <li><a href="">camaras</a></li>
+        <li><a href="">Reproductores MP3</a>
           <ul>
             <li>T1</li>
             <li>T2</li>
@@ -74,6 +76,7 @@
           </ul>
         </li>
       </ul>
+      <div class="reset"></div>
     </nav> <!--Cierra menu-->
     
     <header id="ruta"> 
@@ -82,71 +85,64 @@
     
     <section> <!-- Contenido principal -->
         <div id="banner">
-            Colocar imagen del tamaño del banner
+            <img src="img/Nagisa.Kaworu.full.1772997.jpg" alt="banner-kaworu" /> 
         </div> <!-- Termina banner -->
         
         <div id="ofertas">
             <h3>Ofertas</h3>
             <aside> <!-- Muestra un producto -->
-                <img src="img/productos/0001.jpg" alt="macbook" />
-                <h4>Mackbook</h4>
+                <a href=""><img src="img/productos/0001.jpg" alt="macbook" /></a> <img src="img/productos/0001.jpg" alt="macbook" />
+                <a href=""><h4>Mackbook</h4></a>
                 <p>jfhdskjhfkjsdhfrheiuhcnkmioamec
                 lkjadliocjio jechwqwksvhsdbj,kwpoireuwriow
                 ,dsakjh cjsurdgrerakjsjlkeeihequewijpwqowiropwereubt </p>
                 <p><strong>$16020.00</strong></p>
-                <div class="barinf"> <!-- Barra inferior -->
-                    <aside>[icon car] Adicionar a carrito</aside>
-                    <aside>[icon heart] Adicionar a lista de deseos </aside>
-                </div>
+                <div class="barinf">
+							<a href="#"><i class="fa fa-shopping-basket"></i></a>
+							<a href="#"><i class="fa fa-heart"></i></a>
+							
+				</div>
             </aside> <!--  Termin Muestra un producto -->
             <aside> <!-- Muestra un producto -->
-                <img src="img/productos/0002.jpg" alt="macbook" />
-                <h4>Mackbook</h4>
+                <a href=""><img src="img/productos/0002.jpg" alt="macbook" /></a>
+                <a href=""><h4>Mackbook</h4></a>
                 <p>jfhdskjhfkjsdhfrheiuhcnkmioamec
                 lkjadliocjio jechwqwksvhsdbj,kwpoireuwriow
                 ,dsakjh cjsurdgrerakjsjlkeeihequewijpwqowiropwereubt </p>
                 <p><strong>$16020.00</strong></p>
-                <div class="barinf"> <!-- Barra inferior -->
-                    <aside>[icon car] Adicionar a carrito</aside>
-                    <aside>[icon heart] Adicionar a lista de deseos </aside>
-                </div>
+               	<div class="barinf">
+							<a href="#"><i class="fa fa-shopping-basket"></i></a>
+							<a href="#"><i class="fa fa-heart"></i></a>
+							
+				</div>
             </aside> <!--  Termin Muestra un producto -->
             <aside> <!-- Muestra un producto -->
-                <img src="img/productos/0003.jpg" alt="monitor" />
-                <h4>Monitor</h4>
+                <a href=""><img src="img/productos/0003.jpg" alt="monitor" /></a> 
+                <a href=""><h4>Monitor</h4></a>
                 <p>jfhdskjhfkjsdhfrheiuhcnkmioamec
                 lkjadliocjio jechwqwksvhsdbj,kwpoireuwriow
                 ,dsakjh cjsurdgrerakjsjlkeeihequewijpwqowiropwereubt </p>
                 <p><strong>$680.00</strong></p>
-                <div class="barinf"> <!-- Barra inferior -->
-                    <aside>[icon car] Adicionar a carrito</aside>
-                    <aside>[icon heart] Adicionar a lista de deseos </aside>
-                </div>
+                	<div class="barinf">
+							<a href="#"><i class="fa fa-shopping-basket"></i></a>
+							<a href="#"><i class="fa fa-heart"></i></a>
+							
+				</div>
             </aside> <!--  Termin Muestra un producto -->
-            <aside> <!-- Muestra un producto -->
-                <img src="img/productos/0004.jpg" alt="impresora" />
-                <h4>Impresora</h4>
+            <aside class="ultimo"> <!-- Muestra un producto -->
+                <a href=""> <img src="img/productos/0004.jpg" alt="impresora" /></a>
+                <a href=""><h4>Impresora</h4></a>
                 <p>jfhdskjhfkjsdhfrheiuhcnkmioamec
                 lkjadliocjio jechwqwksvhsdbj,kwpoireuwriow
                 ,dsakjh cjsurdgrerakjsjlkeeihequewijpwqowiropwereubt </p>
                 <p><strong>$6000.00</strong></p>
-                <div class="barinf"> <!-- Barra inferior -->
-                    <aside>[icon car] Adicionar a carrito</aside>
-                    <aside>[icon heart] Adicionar a lista de deseos </aside>
-                </div>
+                <div class="barinf">
+							<a href="#"><i class="fa fa-shopping-basket"></i> </a>
+							<a href="#"><i class="fa fa-heart"></i></a>
+							
+				</div>
             </aside> <!--  Termin Muestra un producto -->
-            <aside> <!-- Muestra un producto -->
-                <img src="img/productos/0005.jpg" alt="smartphone" />
-                <h4>Mackbook</h4>
-                <p>jfhdskjhfkjsdhfrheiuhcnkmioamec
-                lkjadliocjio jechwqwksvhsdbj,kwpoireuwriow
-                ,dsakjh cjsurdgrerakjsjlkeeihequewijpwqowiropwereubt </p>
-                <p><strong>$1020.00</strong></p>
-                <div class="barinf"> <!-- Barra inferior -->
-                    <aside>[icon car] Adicionar a carrito</aside>
-                    <aside>[icon heart] Adicionar a lista de deseos </aside>
-                </div>
-            </aside> <!--  Termin Muestra un producto -->
+            <div class="reset"></div>
         </div> <!-- Termina ofertas -->
         <div id="marcas">
             <div>
@@ -159,7 +155,7 @@
     </section> <!-- Termina Contenido principal -->
   </article>
 
-  <footer>
+    <footer>
     <aside>
       <h3>Algo</h3>
       <ul>
@@ -196,8 +192,7 @@
         <li>Especiales</li>
       </ul>
     </aside>
-
-  </footer>
+    </footer>
 <!--Si es necesario aqui incluimos los script en JS-->
   <script>
 
