@@ -22,6 +22,11 @@ nav#menuStat {
   margin-right: 50px;
 }
 
+header#barsup a {
+    text-decoration: none;    
+    color: #666;
+}
+
 /***
    Estilos para el header del contenido principal
 ***/
@@ -117,6 +122,7 @@ article nav ul {
 article nav ul li {
     float: left;
     position: relative;
+    font-size: 15px;
 }
 
 article nav ul li a {
@@ -287,19 +293,50 @@ div#marcas {
 }
 
 
-
 /* ###########   Estilos para Footer   ###########*/
 footer {
-    width: 960px;
-    margin: 10px auto;
-    box-shadow: 0px 1px 4px #666;
+    background-color: #333;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
 }
 
-footer aside {
-    width: 230px;  /*960 - (15*3)= 915 /4 = */
-    float: right;
-    text-align: center;
+footer section {
+    width: 960px;
+    margin: 0px auto;
+}
+
+footer section aside {
+    float: left;
+    width: 228px;
+    margin-right: 15px;
+    color: #ddd;
+    font-size: 12px;
    
+}
+
+footer section aside.ultimo {
+    margin-right: 0px;
+}
+
+footer section aside ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    color: #ccc;
+}
+
+footer section hr {
+    border: 0px solid #000;
+    border-top: 1px solid #ccc;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+footer section p {
+    font-size: 12px;
+    color: #ccc;
+    
 }
 /***
    Estilos varios
