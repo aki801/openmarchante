@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>OpenMarchante</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	</head>
+<body>
+	<header id="barsub"> <!--considerar éste encabezado como barra de estado superior-->
+		<aside id="moneda">$</aside> 
+		<nav id="menuStat"><i class="fa fa-phone"></i> 55 4079 3401  
+							 <i class="fa fa-user"></i> User 
+							 <i class="fa fa-heart"></i> Deseos 
+							 <i class="fa fa-shopping-basket"></i>Carrito 
+							 <i class="fa fa-sign-out"></i>Salir </nav>
+		<div class="reset"></div>
+	</header>
+
+	<article>
+		<header>
+			<img src="img/logo.png" alt="logo"/>
+			
+			<aside id="carStatus">
+				<i class="fa fa-shopping-basket"></i> 0 item(s) $0.00
+			</aside>
+			<form action="index.html" method="get">
+				<input type="text" name="palabras" required placeholder="busqueda" id="busqueda"><button type="submit" id="submit"><i class="fa fa-search"></i></button>
+			</form>
+		</header>
+		<nav>	
+			<ul>
+				<li><a href="#">Frutas y Legumbres</a>
+					<ul>
+						<li><a href="#">Naranjas</a></li>
+						<li><a href="#">Manzanas</a></li>
+						<li><a href="#">Jitomate</a></li>
+						<li><a href="#">Calabaza</a></li>
+						<li class="sep"></a></li>
+						<li><a href="#">Ver todo</a></li>
+					</ul>
+				</li>
+				<li> <a href="#">Carnes</a>
+					<ul>
+						<li><a href="#">Especialidades</a></li>
+						<li><a href="#">Carnes blancas</a></li>
+						<li><a href="#">Carnes rojas</a></li>
+						<li class="sep"></li>
+						<li><a href="#">Ver todo</a></li>
+					</ul>
+				</li>
+				<li> <a href="#">Abarrotes</a>
+					<ul>
+						<li><a href="#">Concervas</a></li>
+						<li><a href="#">Aceite</a></li>
+						<li><a href="#">Azucar</a></li>
+						<li><a href="#">Galletas</a></li>
+						<li><a href="#">Cereales</a></li>
+						<li><a href="#">Jabones</a></li>
+						<li><a href="#">Cerveza</a></li>
+						<li class="sep"></li>
+						<li> <a href="#">Ver todo</a></li>
+					</ul>
+				</li>
+
+					<li><a href="#">Ropa</a>
+						<ul>
+						<li><a href="#">Dama</a></li>
+						<li><a href="#">Caballero</a></li>
+						<li><a href="#">Infantil</a></li>
+						<li><a href="#">Deportiva</a></li>
+						<li><a href="#">Accesorios</a></li>
+						<li class="sep"></li>
+						<li><a href="#">Ver todo</a></li>
+						</ul>
+					</li>
+					
+					<li><a href="#">Deportes</a>
+
+					<ul>
+						<li><a href="#">Balones</a></li>
+						<li><a href="#">Bicicletas</a></li>
+						<li><a href="#">Calzado</a></li>
+						<li><a href="#">Jersey</a></li>
+						<li><a href="#">Accesorios</a></li>
+						<li class="sep"></li>
+						<li><a href="#">Ver todo</a></li>
+					</ul>
+					</li>
+					<li><a href="#">Línea blanca</a>
+					<ul>
+						<li><a href="#">Sabanas</a></li>
+						<li><a href="#">Lavadoras</a></li>
+						<li><a href="#">Estufas </a></li>
+						<li><a href="#">Accesorios</a></li>
+						<li class="sep"></li>
+						<li><a href="#">Ver todo</a></li>
+					</ul>
+					</li>
+					<li><a href="#">Electrodomésticos</a>
+					
+					<ul>
+						<li><a href="#">Pantallas</a></li>
+						<li><a href="#">Smartphones</a></li>
+						<li><a href="#">Tablets</a></li>
+						<li><a href="#">Laptops</a></li>
+						<li><a href="#">Accesorios</a></li>
+						<li class="sep"></li>
+						<li><a href="#">Ver todo</a></li>
+					</ul>
+					</li>
+					<li><a href="#">Servicios</a>
+					
+					<ul>
+						<li><a href="#">Peluquería</a></li>
+						<li><a href="#">Plomerías</a></li>
+						<li><a href="#">Electronicos</a></li>
+						<li><a href="#">Limpieza</a></li>
+						<li><a href="#">Cocina</a></li>
+						<li class="sep"></li>
+						<li><a href="#">Ver todo</a></li>
+					</ul>
+					</li>
+					<li><a href="#">Regalos</a>
+					
+					<ul>
+						<li><a href="#">Regalos</a></li>
+						<li><a href="#">Revistas</a></li>
+						<li><a href="#">Libros</a></li>
+						<li class="sep"></li>
+						<li><a href="#">Ver todo</a></li>
+					</ul>
+					</li>
+					<li><a href="#">Farmacia</a>
+					
+					<ul>
+						<li><a href="#">Antibioticos</a></li>
+						<li><a href="#">Medicinas</a></li>
+						<li><a href="#">Material para curaciones</a></li>
+						<li class="sep"></li>
+						<li><a href="#">Ver todo</a></li>
+					</ul>
+					</li>
+			</ul>
+		</ul>
+		<div class="reset"></div>		
+		</nav>
+		<header id="ruta">
+			<i class="fa fa-home"></i>| inicio > 
+
+		</header>
+		<section>
+			<div id="banner">
+				<!--colocar una imagen del tamaño del banner-->
+				<img src="img/productos/0002.jpg">
+			</div>
+
+			<div id="ofertas">
+				<h3>Ofertas</h3>
+					<aside> <!--Producto.-->
+						<a href="#"><img src="img/productos/fil.jpg " alt="filete"></a>
+						<a href="#"><h4>Filete de pescado</h4></a>
+						<p>Pescado fresco deshuesado listo para preparar al mejor precio</p>
+						<p><strong>$160.00 kg</strong></p>
+						<div class="reset"></div>
+						<div class="barinf">
+							<a href="#"><i class="fa fa-shopping-basket"></i> <strong>Añadir a la Canasta </strong></a> |
+							<a href="#"><i class="fa fa-heart"></i></a>
+							
+						</div>
+							<!--<i class="fa fa-long-arrow-left"></i>-->
+
+							
+						
+					</aside>
+					<aside> <!--Producto.-->
+						<a href="#"><img src="img/productos/0001.jpg " alt="mandarinas"></a>
+						<a href="#"><h4>Mandarinas</h4></a>
+						<p>Para estas fechas de cembrinas disfrutalo con fruta de temporada</p>
+						<p><strong>$12.00 kg</strong></p>
+						<div class="reset"></div>
+						<div class="barinf">
+							<a href="#"><i class="fa fa-shopping-basket"></i> <strong>Añadir a la Canasta </strong></a> |
+							<a href="#"><i class="fa fa-heart"></i></a>
+							
+						</div>
+					</aside>
+					<aside> <!--Producto.-->
+						<a href="#"><img src="img/productos/ca.jpg " alt="calzado de dama"></a>
+						<a href="#"><h4>Calzado Dama</h4></a>
+						<p>Calzado para dama en la marca ...con 20% de descuento.</p>
+						<p><strong>$250.00</strong></p>
+						<div class="reset"></div>
+						<div class="barinf">
+							<a href="#"><i class="fa fa-shopping-basket"></i> <strong>Añadir a la Canasta</strong></a> |
+							<a href="#"><i class="fa fa-heart"></i></a>
+							
+						</div>
+					</aside>
+					<aside class="ultimo"> <!--Producto.-->
+						<a href="#"><img src="img/productos/0004.jpg" alt="camara"></a>
+						<a href="#"><h4>Camara</h4></a>
+						<p>Intel Core 2 Duo procesador Powered by an Intel Core 2
+							Duo procesador at speeds up tp 2.1..</p>
+						<p><strong>$16 020.00</strong></p>
+						<div class="barinf">
+							<a href="#"><i class="fa fa-shopping-basket"></i>  <strong>Añadir a la Canasta </strong></a> |
+							<a href="#"><i class="fa fa-heart"></i></a>
+							
+						</div>
+
+					</aside>
+			<div class="reset"></div>
+			</div>
+			<div id="marcas">
+				<!--este es un slider de marcas-->
+				<div>
+					<img src="img/marcas/001.jpg" alt="marca1">
+					<img src="img/marcas/002.png" alt="marca2">
+					<img src="img/marcas/003.jpg" alt="marca3">
+					<img src="img/marcas/004.jpg" alt="marca4">
+				</div>
+			</div>
+		</section>	
+	</article>
+	
+<footer>
+	<section>
+		<aside>
+			<h3>Información</h3>
+				<ul>
+					<a href="#"><li>Acerca de</li></a>
+					<li>Información de envio</li>
+					<li>Políticas de privacidad</li>
+					<li>Terminos y condiciones</li>
+				</ul>
+
+		</aside>
+		<aside>
+			<h3>Servicio al cliente</h3>
+				<ul>
+					<li>Contacto </li>
+					<li>Devoluciones</li>
+					
+				</ul>
+
+		</aside>
+		<aside>
+			<h3>Extras</h3>
+				<ul>
+					<li>Marca</li>
+					<li>Sugerencias</li>
+					<li>Afiliados</li>
+					<li>Especiales</li>
+				</ul>
+
+		</aside>
+			<aside class="ultimo">
+			<h3>Mi Cuenta</h3>
+				<ul>
+					<li>Mi cuenta</li>
+					<li>Historial de ordenes</li>
+					<li>Lista de deseos</li>
+					<li>Noticias</li>
+				</ul>
+
+			</aside>
+
+		
+		<div class="reset"></div>
+		<hr>
+		
+		<p>Power by open marchante <br/>
+			Your Store 2015
+		</p>
+		</section>
+		
+</footer>
+
+	<!---incluir los scripts en js-->
+	<script>
+
+	</script> 
+</body>
