@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>OpenMarchante</title>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <header id="barsup"> <!--Considerar este encabezado como una barra de estado superior-->
+    <aside id="moneda">$ moneda <i class="fa fa-caret-down"></i></aside>
+    <nav id="menuStat"><i class="fa fa-whatsapp"></i> Tel  <a href="login.html"> <i class="fa fa-user"></i> User</a> <i class="fa fa-heart"></i> Deseos  <i class="fa fa-shopping-basket"></i> Carrito  <i class="fa fa-sign-out"></i> Salir</nav>
+    <div class="reset"></div>
+  </header>
+
+  <article>
+    <header> <!-- -->
+      <img src="img/Y-k.full.1709057.jpg" alt="logo" />
+       <aside id="carStatus">
+        <i class="fa fa-shopping-basket"></i> 0 item(s) - $0.00
+      </aside>
+      <form action="index.html" method="get">
+        <input id="search" type="text" name="palabras" required placeholder="articulos a buscar"><button id="submit" type="submit"><i class="fa fa-search"></i></button> 
+      </form>   
+    </header> <!-- -->
+    
+    <nav> <!---->
+      <ul>
+        <li><a href="">Desktops</a> 
+          <ul>
+            <li><a href="">Pc (0)</a></li>
+            <li><a href="">Linux (7)</a></li>
+            <li><a href="">Mac (1)</a></li>
+            <li class="sep"></li> <!--separador-->
+            <li><a href="">Ver todos</a></li>
+          </ul>
+        </li>
+
+        <li><a href="">Laptops y Notebooks</a>
+          <ul>
+            <li>Pc (0)</li>
+            <li>Linux (5)</li>
+            <li>Mac (0)</li>
+            <li class="sep"></li> <!--separador-->
+            <li>Ver todos</li>
+          </ul>
+        </li>
+
+        <li> <a href="">Componentes</a>
+          <ul>
+            <li>Ratones(0)</li>
+            <li>Monitores (1)</li>
+            <li>Impresoras (0)</li>
+            <li>Scanners(1)</li>
+            <li>Webcams (4)</li>
+            <li class="sep"></li> <!--separador-->
+            <li>Ver todos</li>
+          </ul>
+        </li>
+
+        <li><a href="">Tablets</a></li>
+        <li><a href="">Software</a></li>
+        <li><a href="">Celulares</a></li>
+        <li><a href="">camaras</a></li>
+        <li><a href="">Reproductores MP3</a>
+          <ul>
+            <li>test 1 (1)</li>
+            <li>test 2 (3)</li>
+            <li>test 3 (0)</li>
+            <li>test 4 (1)</li>
+            <li>test 5 (0)</li>
+            <li>test 6 (1)</li>
+            <li>test 7 (3)</li>
+            <li>test 8 (0)</li>
+            <li>test 9 (1)</li>
+            <li>test 10 (0)</li>
+            <li class="sep"></li> <!--separador-->
+            <li>Ver todos</li>
+          </ul>
+        </li>
+      </ul>
+      <div class="reset"></div>
+    </nav> <!--Cierra menu-->
+    
+    <header id="ruta"> 
+        [icon house|inicio] > Laptops & Notebooks >
+    </header> <!-- ruta -->
+    
+    <section> <!-- Contenido principal -->
+       <div id="detalle-producto">
+            <a href=""> <img src="img/Capa-Asos-02.jpg" alt="impresora" /></a>
+            <aside id="detalle">
+                <h4>Impresora</h4>
+                <p><strong>Marca: </strong></p>
+                <p>jfhdskjhfkjsdhfrheiuhcnkmioamec
+                lkjadliocjio jechwqwksvhsdbj,kwpoireuwriow
+                ,dsakjh
+                cjsurdgrerakjsjlkeeihequewijpwqowiropwereubt </p>
+                <p><strong>$6000.00</strong></p>
+                <div class="barinf">
+                    <a href="#"><i class="fa fa-shopping-basket"></i> </a>
+                    <a href="#"><i class="fa fa-heart"></i></a>
+
+                </div>
+            </aside> <!--Termina Detalle -->
+       </div> <!--Termina el div id="detalle-producto" -->
+        
+    </section> <!-- Termina Contenido principal -->
+  </article>
+
+    <footer>
+        <section>
+          <aside>
+            <h3>Información</h3>
+            <ul>
+              <li>Acerca de</li>
+              <li>Información de envío</li>
+              <li>Políticas de privacidad</li>
+              <li>Términos y condiciones</li>
+            </ul>
+          </aside>
+          <aside>
+            <h3>Servicio al cliente</h3>
+            <ul>
+              <li>Contacto</li>
+              <li>Devoluciones</li>
+            </ul>
+          </aside>
+          <aside>
+            <h3>Extras</h3>
+            <ul>
+              <li>Marca</li>
+              <li>Sugerencias</li>
+              <li>Afiliados</li>
+              <li>Especiales</li>
+            </ul>
+          </aside>
+          <aside class="ultimo">
+            <h3>Mi cuenta</h3>
+            <ul>
+              <li>Mi cuenta</li>
+              <li>Historial de pedidos</li>
+              <li>Lista de deseos</li>
+              <li>Noticias</li>
+            </ul>
+          </aside>
+          <div class="reset"></div>
+          <hr />
+          <p>Powered By OpenMarchante<br />
+             Your Store, CopyLeft 2015</p>
+        </section>
+    </footer>
+<!--Si es necesario aqui incluimos los script en JS-->
+  <script>
+  /* Código en javascript para validar la longitud del campo de password */
+        function valida() {
+            var pass = document.getElementById('pass').value;
+            var long = pass.length;
+            var input = document.getElementById('pass');
+            var ingresar = document.getElementById('ingresar');
+            var mensaje= document.getElementById('mensaje');
+
+            if(long >=8) {
+                input.style.backgroundColor = "#fff";
+                ingresar.disabled=false;
+            } else {
+                /* Botón en rojo inactivo */
+                input.style.backgroundColor = "#ff9999";
+                ingresar.disabled=true;
+                mensaje.innerHTML="La contraseña debe tener almenos 8 caracteres";
+            }
+
+            // alert(pass.length);
+        }
+  </script>
+</body>
+</html>

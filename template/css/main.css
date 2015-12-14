@@ -322,8 +322,7 @@ section div#login form i {
 
 section div#login form input:focus {
     border: 1px solid rgb(1, 82, 221);
-    box-shadow: 0px 0px 3px rgb(1, 82, 221);
-    
+    box-shadow: 0px 0px 3px rgb(1, 82, 221);   
 }
 
 button#ingresar, button#nuevo {
@@ -395,6 +394,35 @@ footer section hr {
 footer section p {
     font-size: 12px;
     color: #ccc;
+    
+}
+
+/*======================================
+    Estilos para Detalle Producto
+=======================================*/
+div#detalle-producto {
+    width: 100%;
+	/*width: 196px;
+	height: 390px;
+	border: 1px solid #999;
+	float: left;
+    margin-right: 15px;
+	padding: 15px;
+	color: #888;  
+    /*position relative para la bar inf
+    position: relative;*/
+}
+
+div#detalle-producto img {
+    width: 30%;
+    display: inline-block;
+ 
+}
+
+div#detalle-producto aside {
+    width: 67%;
+    float: right;
+    margin: 5px;
     
 }
 /***
