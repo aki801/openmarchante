@@ -2,8 +2,7 @@
 body {
   font-size: 16px;
   font-family: Helvetica;
-  background-color: #333;
-}
+  }
 header#barsub{
   background-color: #222;
   color: #eee;
@@ -28,7 +27,11 @@ header#barsup a {
     color: #666;
     right: 0px;
 }
-
+nav#menuStat {
+  float: right;
+  margin-right: 50px;
+  color: #888;
+}
 /***
    Estilos para el header del contenido principal
 ***/
@@ -47,7 +50,6 @@ aside#menulateral{
     float: left;
     background-color: #333;
     color: #eee;
-    padding: 0px 10px;
     margin-bottom: 20px;
 }
 
@@ -55,25 +57,26 @@ aside#menulateral ul {
     margin: 0px;
     padding: 0px;
     list-style: none;
+    margin-right: 20px;
 }
 
 aside#menulateral ul li {
     float: left;
     position: relative;
     font-size: 15px;
-    margin-left: 15px;
+    /*margin-left: 15px;*/
     font-weight: bold;
 }
 
 aside#menulateral ul li a {
     text-decoration: none;
     color: #eee;
-    padding: 5px;
+    padding: 8px;
     display: block;
 }
 
 aside#menulateral ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: #166860;
 }
 
 /* Estilos para submenus */
@@ -89,13 +92,15 @@ aside#menulateral ul li ul {
 }
 
 aside#menulateral ul li ul li {
-    width: 180px;
+    width: 200px;
     color: #222;
     background-color: #555;
     font-size: 14px;
     font-weight: lighter;
 }
-
+aside#menulateral ul li ul li:hover{
+  background-color: #166860;
+}
 li.sep {
     width: 100%;
     border: 0px solid #000;
@@ -149,17 +154,21 @@ button#submit:hover {
 /*	estilos contenido -			*/
 /*****************************/
 section#contenido{
-  width: 960px;
-  
+  width: 1070px;
+  margin:0px auto;
   float: right;
-  margin-right: 100px;
   padding: 20px;
   background-color: #E5EAE9;
   color: #666;
+
+}
+
+h2{
+  color: #166860;
 }
 div.caja{
 	width: 480px;
-	margin: 0px auto;
+	margin: 20px auto;
   border: 1px solid #888;
   box-shadow: 0px 1px 2px #888;
 	margin-top: 100px;
