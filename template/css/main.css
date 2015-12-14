@@ -1,15 +1,14 @@
 /* css/main.css */
 body {
   font-size: 16px;
-  font-family: Arial;
+  font-family: Helvetica;
 }
-
-header#barsup {
+header#barsub{
   background-color: #eee;
-  color: #666;
+  color: #888;
   width: 100%;
-  padding: 10px 0px;
   font-size: 12px;
+  padding: 10px 0px;
 }
 
 aside#moneda {
@@ -38,7 +37,7 @@ article {
 }
 
 article header img {
-    width: 250px;
+  
     height: 50px;
 }
 
@@ -96,7 +95,7 @@ aside#carStatus {
 }
 
 aside#carStatus:hover {
-  background-color: #222;
+  background-color: #00A99D;
 }
 /*
 Estilos para el nav (menu principal)
@@ -106,8 +105,9 @@ article nav {
     width: 940px;
     margin: 0px auto;
     border-radius: 8px;
-    background-color: #229AC8;
+    background-color: #166860;
     color: #eee;
+   
     padding: 0px 10px;
     box-shadow: 0px 1px 2px #333; 
     margin-bottom: 20px;
@@ -122,7 +122,7 @@ article nav ul {
 article nav ul li {
     float: left;
     position: relative;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 article nav ul li a {
@@ -154,7 +154,7 @@ article nav ul li ul li {
 }
 
 article nav ul li ul li:hover {
-    background-color: #229AC8;
+    background-color: #00A99D;
     color: #eee;
 }
 
@@ -170,7 +170,7 @@ article nav ul li ul li a {
 
 article nav ul li ul li a:hover {
     color: #eee;
-    background-color: #229AC8;
+    background-color: #00A99D;
 }
 
 li.sep {
@@ -210,18 +210,20 @@ div#ofertas{
 
 div#ofertas h3{
 	font-weight: normal;
+  color: #2094c0;
 }
 
 div#ofertas aside {
 	width: 196px;
 	height: 390px;
-	border: 1px solid #999;
 	float: left;
     margin-right: 15px;
 	padding: 15px;
 	color: #888;  
     /*position relative para la bar inf*/
     position: relative;
+  border: 1px solid #65940b;
+  box-shadow: 0px 1px 4px #bfd15d;
 }
 
 div#ofertas aside.ultimo {
@@ -267,16 +269,16 @@ div#ofertas aside div.barinf a {
     height: 38px;
     width: 111px;
     float: left;
-    border: 1px solid #ddd;
-    background-color: #eee;
-    color: #666;
+    background-color: #bfd15d;
+    border: 1px solid #4d6c05;
+    color: #4d6c05;
     text-align: center;
     line-height: 35px;
 }
 
 div#ofertas aside div.barinf a:hover {
-    background-color: #ccc;
-    color: #444;
+    color: #65940b;
+
 }
 
 /*****************************	
@@ -291,7 +293,9 @@ div#marcas {
 	border-radius: 8px;
 	
 }
-
+div#marcas img{
+  height: 80px;
+}
 
 /* ###########   Estilos para Footer   ###########*/
 footer {
