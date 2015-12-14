@@ -1,0 +1,67 @@
+/*producto.css*/
+article section#contenedor{
+	width: 960px;
+	display: inline;
+
+	}
+
+article div.producto{
+	width: 680px;
+	border: 1px solid #65940b;
+	border-radius: 8px;
+	box-shadow: 0px 1px 4px #bfd15d;
+	padding: 20px;
+}
+article section#contenedor h4{
+	font-weight: bold;
+	color: #2094c0;
+}
+article section#contenedor div.texto{
+	width: 300px;
+	height: 150px;
+	font-size: 12px;
+	color: #888;
+	margin-right: 200px;
+}
+button.add{
+	width: 223px;
+	height:30px;
+	background-color: #bfd15d;
+	border: 1px solid #65940b;
+	border-radius: 8px;
+	vertical-align: top;
+	padding-top: 0px;
+	position: relative;
+	margin-left: -10px;
+	margin-top: 35px;
+	text-align: center;
+	font-size: 13px;
+	
+}
+button.add a{
+	text-decoration: none;
+	color: #4d6c05;
+}
+button.add a:hover{
+	color: #65940b;
+}
+
+article div#menulateral{
+	width: 200px;
+	height: 200px;
+	background-color: ivory;
+	padding: 10px;
+	border: 1px solid #65940b;
+	border-radius: 8px;
+	
+}
+article div#menulateral a{
+	text-decoration: none;
+	color: #4d6c05;
+}
+#menulateral ul li {
+	list-style: none;
+	line-height: 20px;
+	padding: 0px;
+
+}
