@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>openMarchante</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+  <header id="barsup"><!-- Considerar este encabezado como una barra
+               de estado superior. Se tiene que  -->
+    <aside id="moneda">$ moneda <i class="fa fa-caret-down"></i></aside>
+    <nav id="menuStat"><i class="fa fa-phone"></i> 5530363678 <i class="fa fa-user"></i> User <i class="fa fa-heart"></i> Deseos <i class="fa fa-shopping-cart"></i> Carrito <i class="fa fa-sign-out"></i> Salir</nav>
+    <div class="reset"></div>
+  </header>
+
+  <article>
+    <header>
+      <img src="img/logo.png" alt="logo" />
+      <aside id="carStatus">
+        <i class="fa fa-shopping-cart"></i> 0 item(s) - $0.00
+      </aside>
+      <form action="index.html" method="get">
+        <input id="busqueda"
+               type="text"
+               name="palabras"
+               required
+               placeholder="Palabras de búsqueda"
+        /><button id="submit" type="submit">
+             <i class="fa fa-search"></i>
+        </button>
+      </form>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="">Desktops</a>
+          <ul>
+            <li><a href="">PC (0)</a></li>
+            <li><a href="">MAC (1)</a></li>
+            <li><a href="">Linux (5)</a></li>
+            <li class="sep"></li>
+            <li><a href="">Ver todo</a></li>
+          </ul>
+        </li>
+        <li><a href="">Laptops y Notebooks</a>
+          <ul>
+            <li>PC (0)</li>
+            <li>MAC (0)</li>
+            <li>Linux (2)</li>
+            <li class="sep"></li>
+            <li>Ver todo</li>
+          </ul>
+        </li>
+        <li><a href="">Componentes</a>
+          <ul>
+            <li>Ratones (1)</li>
+            <li>Monitores (3)</li>
+            <li>Impresoras (0)</li>
+            <li>Scanners (1)</li>
+            <li>Web cams (0)</li>
+            <li class="sep"></li>
+            <li>Ver todo</li>
+          </ul>
+        </li>
+        <li><a href="">Tablets</a></li>
+        <li><a href="">Software</a></li>
+        <li><a href="">Smartphones</a></li>
+        <li><a href="">Camaras</a></li>
+        <li><a href="">Reproductores MP3</a>
+          <ul>
+            <li>test 1 (1)</li>
+            <li>test 2 (3)</li>
+            <li>test 3 (0)</li>
+            <li>test 4 (1)</li>
+            <li>test 5 (0)</li>
+            <li>test 6 (1)</li>
+            <li>test 7 (3)</li>
+            <li>test 8 (0)</li>
+            <li>test 9 (1)</li>
+            <li>test 10 (0)</li>
+            <li class="sep"></li>
+            <li>Ver todo</li>
+          </ul>
+        </li>
+      </ul>
+      <div class="reset"></div>
+    </nav>
+
+    <header id="ruta">
+      [icon house|inicio] > Laptops y Notebooks >
+    </header>
+
+    <section><!-- contenido principal -->
+    
+      <div id="ofertas">
+        <h3>REGISTRO</h3>
+        
+        <aside id="registro">
+            <div id="form-header">Registra tu Asistencia</div>
+                <form action="registro.php" method="GET">
+                    <div class="input">
+                        <input type="text" placeholder="Usuario" name="usuario" required />
+                        <span><i class="fa fa-user"></i></span>
+                    </div>
+                    <div class="input">
+                        <input type="text" placeholder="Nombre" name="nombre" required />
+                        <span><i class="fa fa-user"></i></span>
+                    </div>
+                    <div class="input">
+                        <input type="text" placeholder="Apellido Paterno" name="apPaterno" required />
+                        <span><i class="fa fa-user"></i></span>
+                    </div>
+                    <div class="input">
+                        <input type="text" placeholder="Apellido Materno" name="apMaterno" required />
+                        <span><i class="fa fa-user"></i></span>
+                    </div>
+                    <div class="input">
+                        <input type="password" name="password" placeholder="Contraseña" required />
+                           <span><i class="fa fa-lock"></i></span>
+                    </div>
+                    <div class="input">
+                        <input type="email" placeholder="E-mail" name="email" required />
+                        <span><i class="fa fa-user"></i></span>
+                    </div>
+                    <div class="input">
+                        Sexo: M<input type="radio" name="sexo" value="m" required /> H<input type="radio" name="sexo" value="h" required />
+                        <span><i class="fa fa-user"></i></span>
+                    </div>
+                    <div id="mensaje"><strong>Lorem Ipsum</strong></div>
+                    <button type="submit">Registro</button>
+                </form>
+
+        </aside><S
+        <div class="reset"></div>
+      </div><!-- termina div id="ofertas" -->
+   
+    </section>
+  </article>
+
+  <footer>
+    <section>
+      <aside>
+        <h3>Información</h3>
+        <ul>
+          <li>Acerca de</li>
+          <li>Información de envío</li>
+          <li>Políticas de privacidad</li>
+          <li>Términos y condiciones</li>
+        </ul>
+      </aside>
+      <aside>
+        <h3>Servicio al cliente</h3>
+        <ul>
+          <li>Contacto</li>
+          <li>Devoluciones</li>
+        </ul>
+      </aside>
+      <aside>
+        <h3>Extras</h3>
+        <ul>
+          <li>Marca</li>
+          <li>Sugerencias</li>
+          <li>Afiliados</li>
+          <li>Especiales</li>
+        </ul>
+      </aside>
+      <aside class="ultimo">
+        <h3>Mi cuenta</h3>
+        <ul>
+          <li>Mi cuenta</li>
+          <li>Historial de pedidos</li>
+          <li>Lista de deseos</li>
+          <li>Noticias</li>
+        </ul>
+      </aside>
+      <div class="reset"></div>
+      <hr />
+      <p>Powered By OpenMarchante<br />
+         Your Store, CopyLeft 2015</p>
+    </section>
+  </footer>
+
+  <!-- si es necesario acá incluimos los script en JS -->
+  <script>
+  </script>
+  </body>
+</html>
+
+  
