@@ -26,7 +26,7 @@ AppAsset::register($this);
 <body>
 <?php $this->beginBody() ?>
 
-    <div id="barsub">
+    <div id="barsub" class="conteiner-fluid"> <!--el class= conteiner-fluid hace que se adapte el contenido a moviles-->
 
         
     <?php
@@ -56,6 +56,16 @@ AppAsset::register($this);
     ]);
     NavBar::end();
     ?>
+    <div class="nadivvbar"> <!-- boton y menu para display mobiles-->
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"><!--data-colapser= se modifica a movil,-->   
+                                <span class="sr-only"> Esto solo aparece si el navagador no soprta menus </span>
+                                <span class="icon-bar"></span> <!--! 1ra linea del boton para mobiles-->
+                                <span class="icon-bar"></span> <!--! 2ra linea del boton para mobiles-->
+                                <span class="icon-bar"></span> <!--! 3ra linea del boton para mobiles-->
+                                                                                
+                        </button>
+                        
+    </div>
 </div>   <!--considerar éste encabezado como barra de estado superior-->
          
       <aside>
@@ -71,6 +81,7 @@ AppAsset::register($this);
         </header>
 <div class="wrap">
 <article>
+                   
     <?php
     NavBar::begin([
         'brandLabel' => '',
@@ -80,7 +91,7 @@ AppAsset::register($this);
         ],
     ]);
     echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-center'],
+        'options' => ['class' => 'navbar-nav navbar-center '],
         'items' => [
             ['label' => 'Bicicletas', 'url' => ['/site/bicicletas']],
             ['label' => 'Cascos', 'url' => ['/site/cascos']],
@@ -109,7 +120,7 @@ AppAsset::register($this);
 
     <section>
         <aside>
-            <h3>Información</h3>
+            <a href=""><h3>Información</h3></a>
                 <ul>
                     <li>Acerca de</li>
                     <li>Información de envio</li>
@@ -119,7 +130,7 @@ AppAsset::register($this);
 
         </aside>
         <aside>
-            <h3>Servicio al cliente</h3>
+            <a href=""><h3>Servicio al cliente</h3></a></a>
                 <ul>
                     <li>Contacto </li>
                     <li>Devoluciones</li>
@@ -128,7 +139,7 @@ AppAsset::register($this);
 
         </aside>
         <aside>
-            <h3>Extras</h3>
+            <a href=""><h3>Extras</h3></a>
                 <ul>
                     <li>Marca</li>
                     <li>Sugerencias</li>
@@ -138,7 +149,7 @@ AppAsset::register($this);
 
         </aside>
             <aside class="ultimo">
-            <h3>Mi Cuenta</h3>
+            <a href=""><h3>Mi Cuenta</h3></a>
                 <ul>
                     <li>Mi cuenta</li>
                     <li>Historial de ordenes</li>
