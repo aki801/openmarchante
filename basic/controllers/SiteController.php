@@ -127,7 +127,7 @@ class SiteController extends Controller
     {
         return $this->render('carrito');
     }
-     public function actionbicicletas()// paginas de barsup
+     public function actionBicicletas()// paginas de menu
     {
         return $this->render('bicicletas');
     }

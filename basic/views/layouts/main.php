@@ -80,41 +80,41 @@ AppAsset::register($this);
             </form>
         </header>
 <div class="wrap">
-<article>
-                   
-    <?php
-    NavBar::begin([
-        'brandLabel' => '',
-        'brandUrl' => Yii::$app->homeUrl,
-        'options' => [
-            'class' => 'navbar-nav navbar-fixed ',
-        ],
-    ]);
-    echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-center '],
-        'items' => [
-            ['label' => 'Bicicletas', 'url' => ['/site/bicicletas']],
-            ['label' => 'Cascos', 'url' => ['/site/cascos']],
-            ['label' => 'Refacciones', 'url' => ['/site/refacciones']],
-            ['label' => 'Accesorios', 'url' => ['/site/accesorios']],
-            
-            
-        ],
-    ]);
-    NavBar::end();
-    ?>
-   
+    <article>
+                       
+        <?php
+        NavBar::begin([
+            'brandLabel' => '',
+            'brandUrl' => Yii::$app->homeUrl,
+            'options' => [
+                'class' => 'navbar-nav navbar-fixed ',
+            ],
+        ]);
+        echo Nav::widget([
+            'options' => ['class' => 'navbar-nav navbar-center '],
+            'items' => [
+                ['label' => 'Bicicletas', 'url' => ['/site/bicicletas']],
+                ['label' => 'Cascos', 'url' => ['/site/cascos']],
+                ['label' => 'Refacciones', 'url' => ['/site/refacciones']],
+                ['label' => 'Accesorios', 'url' => ['/site/accesorios']],
+                
+                
+            ],
+        ]);
+        NavBar::end();
+        ?>
+       
 
-    <div class="container">
-        <?= Breadcrumbs::widget([
-            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-        ]) ?>
-        <?= $content ?>
-        
+        <div class="container">
+            <?= Breadcrumbs::widget([
+                'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+            ]) ?>
+            <?= $content ?>
+            
+        </div>
     </div>
-</div>
-</article>
-<aside>
+    </article>
+</div>   
 
 <footer class="footer">
 
