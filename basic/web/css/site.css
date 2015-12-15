@@ -2,28 +2,310 @@ html,
 body {
     height: 100%;
 }
+#barsub{
+  background-color: #eee;
+  color: #888;
+  width: 100%;
+  font-size: 12px;
+  padding: 0px 0px;
+}
+
+header#barsup a {
+    text-decoration: none;    
+    color: #888;
+}
+
+#cabezal {
+  width: 960px;
+  margin: 0px auto;
+  margin-top: 20px;
+
+}
+
+aside header img {
+  height: 50px;
+}
+
+aside header form {
+  display: inline-block;
+  vertical-align: top;
+  height: 50px;
+  float: right;
+  margin-right: 10px;
+}
+
+aside header form input {
+  height: 38px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+aside input#busqueda {
+  width: 150px; /* 370-16-2 = 352 */
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border: 1px solid #999;
+  outline: 0px;
+}
+
+input#busqueda:focus {
+  border: 1px solid rgb(1, 82, 221);
+  box-shadow: 0px 0px 3px rgb(1, 82, 221);
+}
+
+button#submit {
+  height: 42px;
+  width: 76px; /* 400-(300+16+2) =  78 - 2 = 76 */
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button#submit:hover {
+  border: 1px solid #999;
+}
+
+aside#carStatus {
+  border-radius: 8px;
+  background-color: #333;
+  color: #eee;
+  display: inline-block;
+  padding: 1px 8px;
+  vertical-align: top;
+  height: 40px;
+  width: 250px;
+  text-align: center;
+  line-height: 40px;
+  float: right;
+}
+
+aside#carStatus:hover {
+  background-color: #00A99D;
+}
 
 .wrap {
     min-height: 100%;
+    width: 960px;
     height: auto;
     margin: 0 auto -60px;
     padding: 0 0 60px;
+
 }
 
 .wrap > .container {
-    padding: 70px 15px 20px;
+    padding: 100px 15px 20px;
+ 
+}
+
+article nav {
+    width: 960px;
+    margin: 0px auto;
+    border-radius: 8px;
+    background-color: #166860;
+    color: #eee;
+   
+    padding: 0px 10px;
+    box-shadow: 0px 1px 2px #333; 
+    margin-bottom: 20px;
+}
+
+article nav ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+article nav ul li {
+    float: left;
+    position: relative;
+    font-size: 12px;
+}
+
+article nav ul li a {
+    text-decoration: none;
+    color: #eee;
+    padding: 15px;
+    display: inline-block;
+}
+
+article nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.15)
+}
+
+/* Estilos para submenus */
+article nav ul li ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: none; /*funciona con el article nav ul li:hover ul   */
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px #222;
+}
+
+article nav ul li ul li {
+    width: 150px;
+    color: #222;
+    background-color: #fff;
+}
+
+article nav ul li ul li:hover {
+    background-color: #00A99D;
+    color: #eee;
+}
+
+article nav ul li:hover ul  {
+    display: block;
+}
+
+article nav ul li ul li a {
+    width: 120px;
+    color: #222;
+    background-color: #fff;
+}
+
+article nav ul li ul li a:hover {
+    color: #eee;
+    background-color: #00A99D;
+}
+
+li.sep {
+    width: 100%;
+    border: 0px solid #000;
+    height: 1px;
+    background-color: #ccc;
+    margin: 0px;
+    padding: 0px;
+}
+/******************************/
+/*  estilos ofertas -           */
+/*****************************/
+
+div#ofertas{
+    width: 960px;
+    margin: 0px auto;
+    margin-top: 100px;
+}
+
+div#ofertas h3{
+    font-weight: normal;
+  color: #2094c0;
+}
+
+div#ofertas aside {
+    margin: 15px;
+    height: 390px;
+    padding: 15px;
+    color: #888;  
+    border: 1px solid #65940b;
+  box-shadow: 0px 1px 4px #bfd15d;
+}
+
+div#ofertas aside.ultimo {
+    margin-right: 0px;
+}
+
+div#ofertas aside a {
+    text-decoration: none;
+    color: #23A1D1;
+    font-size: 14px;
+}
+
+div#ofertas aside a:hover {
+    color: #0040FF;
+}
+
+div#ofertas aside p {
+    font-size: 12px;
+    color: #666;
+}
+
+div#ofertas aside img {
+    height: 200px;
+    margin:0px auto;
+}
+
+div#ofertas aside h4 {
+    font-weight: bold;
+    color: #23a1d1;
+}
+
+div#ofertas aside div.barinf {
+    position: absolute; /*va con el position relative de div#ofertas aside */
+    width: 100%;
+    height: 40px;
+    bottom: 0px;
+    left: 0px;
+    
+}
+
+div#ofertas aside div.barinf a {
+    display: inline-block;
+    height: 38px;
+    width: 111px;
+    float: left;
+    background-color: #bfd15d;
+    border: 1px solid #4d6c05;
+    color: #4d6c05;
+    text-align: center;
+    line-height: 35px;
+}
+
+div#ofertas aside div.barinf a:hover {
+    color: #65940b;
+
 }
 
 .footer {
-    height: 60px;
+    
     background-color: #f5f5f5;
     border-top: 1px solid #ddd;
     padding-top: 20px;
+    background-color: #333;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+.footer section {
+    width: 960px;
+    margin: 0px auto;
+}
+.footer section aside {
+    float: left;
+    width: 228px;
+    margin-right: 15px;
+    color: #ddd;
+    font-size: 12px;
+   
+}
+
+.footer section aside.ultimo {
+    margin-right: 0px;
+}
+
+.footer section aside ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    color: #ccc;
+}
+
+.footer section hr {
+    border: 0px solid #000;
+    border-top: 1px solid #ccc;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.footer section p {
+    font-size: 12px;
+    color: #ccc;
+    
 }
 
 .jumbotron {
     text-align: center;
     background-color: transparent;
+
 }
 
 .jumbotron .btn {
@@ -89,6 +371,10 @@ a.desc:after {
     padding: 10px 20px;
     margin: 0 0 15px 0;
 }
-/*////////////////////////////////*/
-/* estilos para mis paginas     */
-/*///////////////////////////////////*/
+
+/***
+   Estilos varios
+***/
+div.reset {
+  clear: both;
+}

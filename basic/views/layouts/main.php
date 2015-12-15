@@ -17,6 +17,8 @@ AppAsset::register($this);
 <head>
     <meta charset="<?= Yii::$app->charset ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../web/font-awesome/css/font-awesome.min.css">
+    
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
@@ -24,22 +26,25 @@ AppAsset::register($this);
 <body>
 <?php $this->beginBody() ?>
 
-<div class="wrap">
+    <div id="barsub">
+
+        
     <?php
     NavBar::begin([
         'brandLabel' => 'Open Marchante',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top',
+            'class' => 'navbar navbar-fixed',
         ],
     ]);
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
             ['label' => 'Inicio', 'url' => ['/site/index']],
-            ['label' => 'Acerca de', 'url' => ['/site/about']],
-            ['label' => 'Contacto', 'url' => ['/site/contact']],
-            ['label' => 'Devoluciones', 'url' => ['/site/devoluciones']],
+            ['label' => 'Usuario', 'url' => ['/site/usuario']],
+            ['label' => 'Deseos', 'url' => ['/site/deseos']],
+            ['label' => 'Carrito', 'url' => ['/site/carito']],
+            
             Yii::$app->user->isGuest ?
                 ['label' => 'Login', 'url' => ['/site/login']] :
                 [
@@ -51,6 +56,43 @@ AppAsset::register($this);
     ]);
     NavBar::end();
     ?>
+</div>   <!--considerar éste encabezado como barra de estado superior-->
+         
+      <aside>
+        <header id="cabezal">
+            <href="index.php"><img src="../web/img/logo.png" alt="logo"/></a>
+            
+            <aside id="carStatus">
+                <i class="fa fa-shopping-basket"></i> 0 item(s) $0.00
+            </aside>
+            <form action="index.html" method="get">
+                <input type="text" name="palabras" required placeholder="busqueda" id="busqueda"><button type="submit" id="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </header>
+<div class="wrap">
+<article>
+    <?php
+    NavBar::begin([
+        'brandLabel' => '',
+        'brandUrl' => Yii::$app->homeUrl,
+        'options' => [
+            'class' => 'navbar-nav navbar-fixed ',
+        ],
+    ]);
+    echo Nav::widget([
+        'options' => ['class' => 'navbar-nav navbar-center'],
+        'items' => [
+            ['label' => 'Bicicletas', 'url' => ['/site/bicicletas']],
+            ['label' => 'Cascos', 'url' => ['/site/cascos']],
+            ['label' => 'Refacciones', 'url' => ['/site/refacciones']],
+            ['label' => 'Accesorios', 'url' => ['/site/accesorios']],
+            
+            
+        ],
+    ]);
+    NavBar::end();
+    ?>
+   
 
     <div class="container">
         <?= Breadcrumbs::widget([
@@ -60,8 +102,62 @@ AppAsset::register($this);
         
     </div>
 </div>
+</article>
+<aside>
 
 <footer class="footer">
+
+    <section>
+        <aside>
+            <h3>Información</h3>
+                <ul>
+                    <li>Acerca de</li>
+                    <li>Información de envio</li>
+                    <li>Políticas de privacidad</li>
+                    <li>Terminos y condiciones</li>
+                </ul>
+
+        </aside>
+        <aside>
+            <h3>Servicio al cliente</h3>
+                <ul>
+                    <li>Contacto </li>
+                    <li>Devoluciones</li>
+                    
+                </ul>
+
+        </aside>
+        <aside>
+            <h3>Extras</h3>
+                <ul>
+                    <li>Marca</li>
+                    <li>Sugerencias</li>
+                    <li>Afiliados</li>
+                    <li>Especiales</li>
+                </ul>
+
+        </aside>
+            <aside class="ultimo">
+            <h3>Mi Cuenta</h3>
+                <ul>
+                    <li>Mi cuenta</li>
+                    <li>Historial de ordenes</li>
+                    <li>Lista de deseos</li>
+                    <li>Noticias</li>
+                </ul>
+
+            </aside>
+
+        
+        <div class="reset"></div>
+        <hr>
+        
+        <p>Power by open marchante <br/>
+            Your Store 2015
+        </p>
+        </section>
+        
+
     <div class="container">
         <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
 

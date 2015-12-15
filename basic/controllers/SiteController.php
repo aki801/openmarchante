@@ -115,5 +115,32 @@ class SiteController extends Controller
             return $this->render('entry',['model'=>$model]);
         }
     }
-    
+     public function actionUsuario()// paginas de barsup
+    {
+        return $this->render('user');
+    }
+     public function actionDeseos()// paginas de barsup
+    {
+        return $this->render('deseos');
+    }
+     public function actionCarrito()// paginas de barsup
+    {
+        return $this->render('carrito');
+    }
+     public function actionbicicletas()// paginas de barsup
+    {
+        return $this->render('bicicletas');
+    }
+     public function actionCascos()// paginas de barsup
+    {
+        return $this->render('cascos');
+    }
+     public function actionRefacciones()// paginas de barsup
+    {
+        return $this->render('refacciones');
+    }
+     public function actionAccesorios()// paginas de barsup
+    {
+        return $this->render('accesorios');
+    }
 }
