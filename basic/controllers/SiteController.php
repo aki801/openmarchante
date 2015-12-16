@@ -9,6 +9,7 @@ use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
 use app\models\EntryForm;
+use app\models\RegistroForm;
 
 class SiteController extends Controller
 {
@@ -113,6 +114,21 @@ class SiteController extends Controller
         }else{
             //either the page in initially displayed or there is some validation error
             return $this->render('entry',['model'=>$model]);
+        }
+    }
+    public function actionRegistro()
+    {
+        $model = new RegistroForm();
+
+        if($model->load(Yii::$app->request->post()) &&$model->validate()) {
+            //valid data received in $model
+
+            //do something meaningful here about $model ..
+
+            return $this->render('registro-comfirm', ['model'=>$model]);
+        }else{
+            //either the page in initially displayed or there is some validation error
+            return $this->render('Registro',['model'=>$model]);
         }
     }
      public function actionUsuario()// paginas de barsup

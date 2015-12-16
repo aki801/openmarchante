@@ -41,7 +41,7 @@ AppAsset::register($this);
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
             ['label' => 'Inicio', 'url' => ['/site/index']],
-            ['label' => 'Usuario', 'url' => ['/site/usuario']],
+            ['label' => 'Registro', 'url' => ['/site/registro']],
             ['label' => 'Deseos', 'url' => ['/site/deseos']],
             ['label' => 'Carrito', 'url' => ['/site/carito']],
             

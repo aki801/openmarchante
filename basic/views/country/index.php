@@ -1,15 +1,30 @@
 <?php
 use yii\helpers\Html;
 use yii\widgets\LinkPager;
-?>
-<h1>Countries</h1>
-<ul>
-<?php foreach ($countries as $country): ?>
-    <li>
-        <?= Html::encode("{$country->name} ({$country->code})") ?>:
-        <?= $country->population ?>
-    </li>
-<?php endforeach; ?>
-</ul>
 
-<?= LinkPager::widget(['pagination' => $pagination]) ?>
+$this->title = 'Lista de deseos';
+$this->params['breadcrumbs'][] = $this->title;
+?>
+?>
+<h1>Lista de deseos</h1>
+	<div class="panel panel-success" > <!--panel color verde-->
+			  <div class="panel-heading">
+			    <h3 class="panel-title">Ingresa tu información</h3>
+			  </div>
+		 <div class="panel-body row">
+		    <!--Panel content-->
+
+			<ul>
+			<?php foreach ($countries as $country): ?>
+			    <li>
+			        <?= Html::encode("{$country->name} ({$country->code})") ?>:
+			        <?= $country->population ?>
+			    </li>
+			<?php endforeach; ?>
+			</ul>
+
+			<?= LinkPager::widget(['pagination' => $pagination]) ?>
+
+		</div>
+
+</div>
