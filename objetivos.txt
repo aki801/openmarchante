@@ -1,0 +1,52 @@
+objetivo: 
+clonar la cms llamado de open cart
+
+pagina a clonar:
+	0.[base.html]
+	1.[inicio]
+		- menu -> muestra productos de la categoria seleccionada
+		- banner-> muestra detalle de producto
+		- busqueda -> muestra lista de productos que coincidan con las palabras de busqueda
+		- lista de ofertas -> ver banner
+		- marcas -> muestra lista de productos
+		- boton carrito de compra -> muestra lista de productos en carrito de compra
+		- moneda -> (accion: cambia los precios de la pagina actual a la moneda seleccionada)
+		- boton de deseos -> muestra lista de productos deseados
+		- boton usuario - entrar -> muestra un formulario para solicitar usuario y clave
+		- boton usuario - registrar -> nuevo registro
+	
+	2.[panel de administracion] // localhost/openmarchante/admin
+
+		2.1 login
+
+		2.2 opcion para administrar:
+			- [principal]
+
+			- [categorias]
+				(agregar categoria)
+				(modificar categoria)
+				eliminar categoria
+				(listar categorias)
+
+			- [usuario]
+				(agregar usuario)
+				(modificar usuario)
+				eliminar usuario
+				(listar usuario)
+
+			- [prductos]
+				(agregar producto)
+				(modificar producto)
+				eliminar producto
+				(listar producto)
+
+			
+				- templates*
+				- medios de pago* (paypal)
+
+Definir la pagina de lista de productos(pam)
+definir la pagina de categorias (pam)
+definir la pagina de detalle de producto (kary)
+login-(kary)
+registro (rick-pam)
+definir la pagina de lista de productos en el carrito $ (rick)

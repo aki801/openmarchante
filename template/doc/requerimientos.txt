@@ -1,0 +1,15 @@
+Obj:
+Clonar el CMS llamado Opencar﻿t
+
+
+Pags a clonar:
+	0. base.html
+	1. *Inicio 
+	1.1 Menu --> muestra productos de la capegoria seleccionada
+	1.2 Banner --> muestra detalle del producto seleccionado
+	1.3 Busqueda --> mestra la lista de productos relacionados con esa palabra
+	1.4 Ofertas --> Mostrar detalle de producto seleccionado
+	1.5 Marca --> muestra la lista de productos q coincidan con la marca
+	1.6 boton de carrito -->
+	2. Panel de admon
+	3. 

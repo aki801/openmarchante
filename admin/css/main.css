@@ -1,0 +1,188 @@
+/* css/main.css */
+body {
+  font-size: 16px;
+  font-family: Helvetica;
+  background-color: #333;
+}
+header#barsub{
+  background-color: #222;
+  color: #eee;
+  width: 100%;
+  font-size: 12px;
+  padding: 10px 0px;
+  float: right;
+}
+
+div#moneda img{
+  float: left;
+  margin-left: 50px;
+  height: 20px;
+}
+
+i{
+  margin: 2px;
+}
+
+header#barsup a {
+    text-decoration: none;    
+    color: #666;
+    right: 0px;
+}
+
+/***
+   Estilos para el header del contenido principal
+***/
+article {
+  margin: 0px auto;
+ 
+}
+
+
+/*
+Estilos para el menu lateral
+*/
+
+aside#menulateral{
+    width: 200px;
+    float: left;
+    background-color: #333;
+    color: #eee;
+    padding: 0px 10px;
+    margin-bottom: 20px;
+}
+
+aside#menulateral ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+aside#menulateral ul li {
+    float: left;
+    position: relative;
+    font-size: 15px;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+aside#menulateral ul li a {
+    text-decoration: none;
+    color: #eee;
+    padding: 5px;
+    display: block;
+}
+
+aside#menulateral ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Estilos para submenus */
+aside#menulateral ul li ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+   /* display: none; /*funciona con el article nav ul li:hover ul ******   */
+    position: relative;
+    font-size: 15px;
+    background-color: #333;
+    
+}
+
+aside#menulateral ul li ul li {
+    width: 180px;
+    color: #222;
+    background-color: #555;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+li.sep {
+    width: 100%;
+    border: 0px solid #000;
+    height: 1px;
+    background-color: #ccc;
+    margin: 0px;
+    padding: 0px;
+}
+/*//////////////////////////////*/
+/* estilos form           */
+
+article section form {
+  display: inline-block;
+  vertical-align: top;
+  height: 50px;
+  float: right;
+  margin-right: 10px;
+}
+
+article section form input {
+  height: 38px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+input#busqueda {
+  width: 300px; /* 370-16-2 = 352 */
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border: 1px solid #999;
+  outline: 0px;
+}
+
+input#busqueda:focus {
+  border: 1px solid rgb(1, 82, 221);
+  box-shadow: 0px 0px 3px rgb(1, 82, 221);
+}
+
+button#submit {
+  height: 42px;
+  width: 76px; /* 400-(300+16+2) =  78 - 2 = 76 */
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button#submit:hover {
+  border: 1px solid #999;
+}
+/******************************/
+/*	estilos contenido -			*/
+/*****************************/
+section#contenido{
+  width: 960px;
+  
+  float: right;
+  margin-right: 100px;
+  padding: 20px;
+  background-color: #E5EAE9;
+  color: #666;
+}
+div.caja{
+	width: 480px;
+	margin: 0px auto;
+  border: 1px solid #888;
+  box-shadow: 0px 1px 2px #888;
+	margin-top: 100px;
+  border-radius: 8px; 
+  background-color: #eee;
+  padding: 15px;
+}
+
+div.caja button{
+  background-color: #166860;
+  border-radius: 8px;
+  border: 1px solid #888;
+  height: 30px;
+  width: 50px;
+  color: #eee;
+  padding: 10px;
+}
+div.caja button:hover{
+  background-color: rgba(0,0,0, 0.1);
+}
+/***
+   Estilos varios
+***/
+div.reset {
+  clear: both;
+}

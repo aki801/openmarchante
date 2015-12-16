@@ -1,13 +1,15 @@
+/* css/main.css */
 body {
   font-size: 16px;
-  font-family: Helvetica;
+  font-family: Arial;
 }
-header#barsub{
+
+header#barsup {
   background-color: #eee;
-  color: #888;
+  color: #666;
   width: 100%;
-  font-size: 12px;
   padding: 10px 0px;
+  font-size: 12px;
 }
 
 aside#moneda {
@@ -21,7 +23,7 @@ nav#menuStat {
 }
 
 header#barsup a {
-    text-decoration: none;
+    text-decoration: none;    
     color: #666;
 }
 
@@ -36,7 +38,7 @@ article {
 }
 
 article header img {
-
+    width: 250px;
     height: 50px;
 }
 
@@ -94,7 +96,7 @@ aside#carStatus {
 }
 
 aside#carStatus:hover {
-  background-color: #00A99D;
+  background-color: #222;
 }
 /*
 Estilos para el nav (menu principal)
@@ -104,11 +106,10 @@ article nav {
     width: 940px;
     margin: 0px auto;
     border-radius: 8px;
-    background-color: #166860;
+    background-color: #229AC8;
     color: #eee;
-
     padding: 0px 10px;
-    box-shadow: 0px 1px 2px #333;
+    box-shadow: 0px 1px 2px #333; 
     margin-bottom: 20px;
 }
 
@@ -121,7 +122,7 @@ article nav ul {
 article nav ul li {
     float: left;
     position: relative;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 article nav ul li a {
@@ -153,7 +154,7 @@ article nav ul li ul li {
 }
 
 article nav ul li ul li:hover {
-    background-color: #00A99D;
+    background-color: #229AC8;
     color: #eee;
 }
 
@@ -169,7 +170,7 @@ article nav ul li ul li a {
 
 article nav ul li ul li a:hover {
     color: #eee;
-    background-color: #00A99D;
+    background-color: #229AC8;
 }
 
 li.sep {
@@ -194,8 +195,8 @@ div#banner {
 }
 
 div#banner img {
-    width: 100%;
-}
+    width: 100%;   
+} 
 
 /******************************/
 /*	estilos ofertas -			*/
@@ -209,20 +210,18 @@ div#ofertas{
 
 div#ofertas h3{
 	font-weight: normal;
-  color: #2094c0;
 }
 
 div#ofertas aside {
 	width: 196px;
 	height: 390px;
+	border: 1px solid #999;
 	float: left;
     margin-right: 15px;
 	padding: 15px;
-	color: #888;
+	color: #888;  
     /*position relative para la bar inf*/
     position: relative;
-  border: 1px solid #65940b;
-  box-shadow: 0px 1px 4px #bfd15d;
 }
 
 div#ofertas aside.ultimo {
@@ -260,7 +259,7 @@ div#ofertas aside div.barinf {
     height: 40px;
     bottom: 0px;
     left: 0px;
-
+    
 }
 
 div#ofertas aside div.barinf a {
@@ -268,19 +267,19 @@ div#ofertas aside div.barinf a {
     height: 38px;
     width: 111px;
     float: left;
-    background-color: #bfd15d;
-    border: 1px solid #4d6c05;
-    color: #4d6c05;
+    border: 1px solid #ddd;
+    background-color: #eee;
+    color: #666;
     text-align: center;
     line-height: 35px;
 }
 
 div#ofertas aside div.barinf a:hover {
-    color: #65940b;
-
+    background-color: #ccc;
+    color: #444;
 }
 
-/*****************************
+/*****************************	
 estilos para slider	de marcas
 *****************************/
 div#marcas {
@@ -290,87 +289,9 @@ div#marcas {
     margin-top: 20px;
 	box-shadow: 0px 1px 4px #666;
 	border-radius: 8px;
-
-}
-div#marcas img{
-  height: 80px;
+	
 }
 
-/*-----------------  Login  -------------------*/
-section div#login {
-    background-color: #fff;
-    width: 25%;
-    padding: 1%;
-    margin: 7% auto;
-    border: 2px solid #316CD8;
-    border-radius: 8px;
-    box-shadow:inset  0px 0px 10px #000;
-}
-
-
-section div#login form input {
-    width: 80%;
-    height: 20px;
-    margin: 3% 2%;
-    color: #ff6200;
-    text-align: center;
-    border-radius: 8px;
-    border: 1px solid #999;
-    outline: 0px;
-}
-
-section div#login form i {
-    width: 11px;
-    margin: 3% 2%;
-}
-
-section div#login form input:focus {
-    border: 1px solid rgb(1, 82, 221);
-    box-shadow: 0px 0px 3px rgb(1, 82, 221);
-}
-
-button#ingresar, button#nuevo {
-    color: #fff;
-    width: 75%;
-    height: 30px;
-    margin: 1.5% 2%;
-    margin-left: 14%;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    box-shadow: 0px 2px 0px;
-}
-
-button#ingresar a, button#nuevo a {
-    text-decoration: none;
-    color: #666;
-}
-button#ingresar:hover, button#nuevo:hover {
-    border: 1px solid #999;
-}
-
-div#mensaje{
-    color: #777;
-    text-align: center;
-    margin: 5px auto;
-/*======================================
-    Estilos para Detalle Producto
-=======================================*/
-div#detalle-producto {
-    width: 100%;
-}
-
-div#detalle-producto img {
-    width: 30%;
-    display: inline-block;
-
-}
-
-div#detalle-producto aside {
-    width: 67%;
-    float: right;
-    margin: 5px;
-
-}
 
 /* ###########   Estilos para Footer   ###########*/
 footer {
@@ -390,11 +311,8 @@ footer section aside {
     width: 228px;
     margin-right: 15px;
     color: #ddd;
-
-}
-
     font-size: 12px;
-
+   
 }
 
 footer section aside.ultimo {
@@ -418,9 +336,8 @@ footer section hr {
 footer section p {
     font-size: 12px;
     color: #ccc;
-
+    
 }
-
 /***
    Estilos varios
 ***/

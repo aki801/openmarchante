@@ -1,0 +1,80 @@
+/******************************/
+/*	estilos ofertas -			*/
+/*****************************/
+
+div#productos{
+	width: 960px;
+	margin: 0px auto;
+	margin-top: 15px;
+}
+
+div#productos h3{
+	font-weight: normal;
+  color: #2094c0;
+}
+
+div#productos aside {
+	width: 273px; /*960/3=320 -2 =318 - (15*3)= 318-45= 273*/
+	height: 450px;
+	float: left;
+  margin-right: 15px;
+  margin-top: 15px;
+	padding: 15px;
+	color: #888;  
+    /*position relative para la bar inf*/
+    position: relative;
+  border: 1px solid #65940b;
+  border-radius: 8px;
+  box-shadow: 0px 1px 4px #bfd15d;
+}
+
+div#productos aside.ultimo {
+    margin-right: 0px;
+}
+
+div#productos aside a {
+    text-decoration: none;
+    color: #23A1D1;
+    font-size: 14px;
+}
+
+div#productos aside a:hover {
+    color: #0040FF;
+}
+
+div#productos aside p {
+    font-size: 12px;
+    color: #666;
+}
+
+div#productos aside img {
+	height: 180px;
+	margin:0px auto;
+}
+
+div#productos aside h4 {
+	font-weight: bold;
+	color: #23a1d1;
+}
+
+div#productos aside button.add{
+    position: absolute; /*va con el position relative de div#ofertas aside */
+    width: 80%;
+    height: 40px;
+    bottom: 10px;
+    left: 20px;
+    margin: 10px auto;
+    border-radius: 8px;
+    border: 1px solid #166860;
+    background-color: #97DBD2;
+    
+}
+div#productos aside button.add a{
+    text-decoration: none;
+    color:  #166860;
+}
+
+button.add a:hover {
+    color: #00A99D;
+
+}
